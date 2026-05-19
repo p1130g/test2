@@ -1,44 +1,13 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>カレンダーアプリ</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="container">
-        <div class="calendar-wrapper">
-            <div class="calendar-header">
-                <button id="prevBtn" class="nav-btn">❮</button>
-                <h1 id="monthYear"></h1>
-                <button id="nextBtn" class="nav-btn">❯</button>
-            </div>
-            
-            <div class="weekdays">
-                <div class="weekday">日</div>
-                <div class="weekday">月</div>
-                <div class="weekday">火</div>
-                <div class="weekday">水</div>
-                <div class="weekday">木</div>
-                <div class="weekday">金</div>
-                <div class="weekday">土</div>
-            </div>
-            
-            <div class="dates" id="datesContainer"></div>
-        </div>
-        
-        <div class="sidebar">
-            <h2>予定</h2>
-            <input type="date" id="eventDate" class="event-input">
-            <input type="text" id="eventTitle" class="event-input" placeholder="予定のタイトル">
-            <textarea id="eventDesc" class="event-input" placeholder="予定の詳細"></textarea>
-            <button id="addBtn" class="add-btn">予定を追加</button>
-            
-            <div id="eventsList" class="events-list"></div>
-        </div>
-    </div>
-    
-    <script src="script.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>📅 Calendar App - Vue 3 + TypeScript</title>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
 </html>
